@@ -25,16 +25,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--生成模型的包名和位置-->
-        <javaModelGenerator targetPackage="com.antcloud.xiakehou.dao.po" targetProject="src">
+        <javaModelGenerator targetPackage="alipay.openplatform.edu.campus.zhadui.dao.po" targetProject="src">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--生成的映射文件包名和位置-->
-        <sqlMapGenerator targetPackage="com.antcloud.xiakehou.dao" targetProject="src">
+        <sqlMapGenerator targetPackage="mybatis" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--生成DAO的包名和位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.antcloud.xiakehou.dao.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="alipay.openplatform.edu.campus.zhadui.dao.mapper"
                              targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
@@ -42,126 +42,131 @@
         <!--<table tableName="表名"  domainObjectName="类名"></table>-->
         <!--  账户和流水  -->
 
-        <table tableName="admin_operator_log" domainObjectName="adminOperatorLog" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_operator_log" domainObjectName="adminOperatorLog" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="admin_pic_school" domainObjectName="adminPicSchool" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_pic_school" domainObjectName="adminPicSchool" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="admin_picture" domainObjectName="adminPicture" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
-
-
-        <table tableName="admin_privilege" domainObjectName="adminPrivilege" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
-
-        <table tableName="admin_role" domainObjectName="adminRole" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
-
-        <table tableName="admin_role_privilege" domainObjectName="adminRolePrivilege" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_picture" domainObjectName="adminPicture" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
 
-        <table tableName="admin_user" domainObjectName="adminUser" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_privilege" domainObjectName="adminPrivilege" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+
+        <!--<table tableName="admin_role" domainObjectName="adminRole" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+
+        <!--<table tableName="admin_role_privilege" domainObjectName="adminRolePrivilege" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
 
-        <table tableName="admin_user_role" domainObjectName="adminUserRole" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
-
-        <table tableName="admin_user_school" domainObjectName="adminUserSchool" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_user" domainObjectName="adminUser" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
 
-        <table tableName="xkh_act_com_rule" domainObjectName="xkhActComRule" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="admin_user_role" domainObjectName="adminUserRole" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+
+        <!--<table tableName="admin_user_school" domainObjectName="adminUserSchool" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
 
-        <table tableName="xkh_activity" domainObjectName="xkhActivity" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_act_com_rule" domainObjectName="xkhActComRule" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_activity_pv" domainObjectName="xkhActivityPv" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
 
-        <table tableName="xkh_activity_user" domainObjectName="xkhActivityUser" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_activity" domainObjectName="xkhActivity" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_blacklist" domainObjectName="xkhBlacklist" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_activity_pv" domainObjectName="xkhActivityPv" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_community" domainObjectName="xkhCommunity" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_activity_user" domainObjectName="xkhActivityUser" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_community_user" domainObjectName="xkhCommunityUser" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_blacklist" domainObjectName="xkhBlacklist" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_like_record" domainObjectName="xkhLikeRecord" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_community" domainObjectName="xkhCommunity" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_message" domainObjectName="xkhMessage" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_community_user" domainObjectName="xkhCommunityUser" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_type" domainObjectName="xkhType" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"></property>
-        </table>
+        <!--<table tableName="xkh_like_record" domainObjectName="xkhLikeRecord" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
 
-        <table tableName="xkh_user" domainObjectName="xkhUser" enableCountByExample="false"
+        <!--<table tableName="xkh_message" domainObjectName="xkhMessage" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+
+        <!--<table tableName="xkh_type" domainObjectName="xkhType" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+
+        <!--<table tableName="xkh_user" domainObjectName="xkhUser" enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"></property>-->
+        <!--</table>-->
+        <table tableName="prom_subvention_involvement" domainObjectName="PromSubventionInvolvement" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"></property>
