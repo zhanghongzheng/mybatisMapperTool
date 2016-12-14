@@ -3,14 +3,30 @@ mybatisMapper自动生成工具
 
 1，启动：
 TestMybatis：
+
+
+
 public class TestMybatis {
-    public static void main(String[] args) throws InterruptedException, SQLException, InvalidConfigurationException, XMLParserException, IOException {
+
+    public static void main(String[] args) throws 
+    InterruptedException, SQLException, InvalidConfigurationException,
+     XMLParserException, IOException {
+     
         MybatisPlugin.start();
+        
     }
 }
+
+
 2，生成文件路径：见配置文件
+
+
 3，配置文件：
+
+
 generatorConfig.xml
+
+
 
 
 <?xml version="1.0" encoding="UTF-8" ?>
